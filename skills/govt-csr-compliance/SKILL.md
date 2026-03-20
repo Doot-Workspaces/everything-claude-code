@@ -303,3 +303,9 @@ bench --site production.dris.com set-config enable_two_factor_auth 1
 bench --site production.dris.com doctor
 bench --site production.dris.com show-config | grep -i "debug\|cors\|rate"
 ```
+
+## Cross-References
+
+- **CSR legal framework** (`csr-compliance-india`): Comprehensive India CSR Act 2013 coverage — Section 135, Schedule VII, MCA reporting, penalties, spend calculation. Use alongside this skill for legal context behind the technical implementation.
+- **FCRA compliance** (`fcra-compliance`): Foreign funds regulation. NGOs receiving both CSR and FCRA funds need both compliance frameworks.
+- **Grant management operations** (`grant-management-operations`): Fund flow, UCs, SoEs, and budget management that underpin CSR financial compliance.

@@ -53,3 +53,11 @@ bench --site test_site run-tests --app my_app --coverage
 - E2E tests run on PR to main branch.
 - Load tests run before production deployment.
 - Test results and coverage reports uploaded as artifacts.
+
+## Performance Testing
+
+- Load test critical API paths before production deployment
+- Target p95 response time < 2s for user-facing pages
+- Stress test with 10x expected concurrent users
+- Monitor database connection pool under load
+- Use `frappe.utils.caching` for repeated heavy computations

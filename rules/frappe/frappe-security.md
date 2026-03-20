@@ -46,3 +46,12 @@
 - `allow_cors` restricted to known domains only
 - HTTPS enforced with valid SSL certificates
 - Regular backup verification (restore test monthly)
+
+## Credential Management
+
+- NEVER hardcode passwords, API keys, or tokens in source code
+- Store sensitive config in `site_config.json` (chmod 600)
+- Use `frappe.conf.get("key")` to load secrets at runtime
+- NEVER store credentials in AI memory files or conversation logs
+- Reference WHERE credentials are stored, never the credentials themselves
+- Rotate credentials regularly; alert on outdated keys
